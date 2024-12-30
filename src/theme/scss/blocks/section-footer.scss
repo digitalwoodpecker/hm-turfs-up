@@ -1,0 +1,93 @@
+.page-footer {
+    color: var(--color-lt-light-1) !important;
+    background-color: var(--color-lt-accent-2)!important;
+    border-bottom: 0 !important;
+
+    .page-footer__copyright-container{
+        .block-left {
+            .item-policy {
+                color: rgb(255 255 255 / 50%);
+            }
+
+            .item-sitemap {
+                color: rgb(255 255 255 / 50%);
+            }
+        }
+
+        .block-right {
+            color: rgb(255 255 255 / 50%);
+
+            .item-design {
+                .text {
+                    color: rgb(255 255 255 / 50%);
+                }
+
+                .design-link {
+                    color: rgb(255 255 255 / 50%);
+                }
+            }
+        }
+
+    }
+
+    .page-footer__info{
+        &.page-footer__info--v1{
+            .button-bordered {
+                color: var(--color-lt-light-1);
+
+                &::after {
+                    background: var(--color-lt-light-1);
+                }
+    
+                &::before {
+                    border: 2px solid var(--color-lt-light-1);
+                }
+
+                &:hover {
+                    .button__label {
+                        color: black !important;
+                    }
+                }
+            }
+
+            .footer-contact-info{
+                .address-link{
+                    color: white !important;
+                }
+    
+                .phone-number{
+                    color: white !important;
+                }
+    
+                .page-footer__social{
+                    .social-item {
+                        background-color: rgba(255, 255, 255, 10%) !important;
+                        color: var(--color-dt-light) !important;
+                    }
+                }
+            }
+
+                .section-title{
+                    &.section-title--style5{
+                        &.title {
+                            font-size: 24px;
+                            font-weight: 600;
+                            line-height: 28.8px;
+                        }
+                    }
+                }
+
+                .menu{
+                    a{
+                        color: rgb(255 255 255 / 80%);
+                        font-size: 16px;
+                        line-height: 2.4rem;
+                        
+                        &:hover{
+                            color: var(--color-lt-accent-1) !important;                       
+                        }
+                    }
+                }
+            }
+        }
+    }

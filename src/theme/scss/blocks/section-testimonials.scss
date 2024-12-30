@@ -1,0 +1,53 @@
+.section-testimonials{
+	&.section-testimonials--style-v3{
+	  &.green_bg{
+		background-color: var(--color-lt-accent-1);
+
+		.section-testimonials__slider{
+			.testimonials-card__logo {
+				color: rgb(102, 156, 66);
+			}
+	    }
+
+		.star-rating__icon {
+			color: var(--color-lt-accent-2);
+		}
+
+		.section-testimonials__title{
+			color:white;
+		}
+
+		.section-testimonials__rate-info{
+			color:white;
+		}
+
+		.swiper-controls--circle{
+			box-shadow: 0 0 2rem var(--color-lt-accent-2);
+
+			.swiper-button-prev{
+				background-color: var(--color-lt-accent-2);
+			}
+
+			.swiper-button-next {
+				background-color: var(--color-lt-accent-2);
+			}
+
+			button.swiper-button-prev:hover{
+				background-color: white !important;
+
+				svg{
+					color: var(--color-lt-accent-2);
+				}
+			}
+
+			button.swiper-button-next:hover{
+				background-color: white !important;
+
+				svg{
+					color: var(--color-lt-accent-2);
+				}
+			}
+		}
+	  }
+	}
+}

@@ -1,0 +1,31 @@
+.section-our-team{
+    &.section-our-team--style-v1{
+        &.green_bg{
+            background-color: var(--color-lt-accent-1);
+            
+            .desktop{
+                path[stroke] {
+                    stroke: white;
+                }
+            }
+
+            .section-our-team{
+                &__title{
+                    color:white;
+                }
+
+                &__description{
+                    color:white;
+                }
+                
+                &__slider-pagination {
+                    color:white;
+                }
+
+                &__gallery-thumbs-item::after{
+                    background-color: rgb(102 156 66 / 49%);
+                }
+            }
+        }
+    }
+}

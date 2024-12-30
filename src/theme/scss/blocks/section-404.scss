@@ -1,0 +1,10 @@
+.section-page-404{
+    .section__body{
+        .section-page-404__error{
+            .error-number{
+                color: var(--color-lt-accent-2) !important;
+                text-shadow: 0 0 5rem rgba(var(--color-lt-accent-2-RGB), 0.5) !important;
+            }
+        }
+    }
+}

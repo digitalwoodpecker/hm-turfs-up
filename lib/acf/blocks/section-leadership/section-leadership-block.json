@@ -1,0 +1,20 @@
+{
+  "name": "section-leadership",
+  "title": "Leadership",
+  "description": "Showcase the leaders of the organization and information about them.",
+  "category": "sections",
+  "icon": "businessman",
+  "apiVersion": 2,
+  "keywords": [
+    "Leadership"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./lib/acf/blocks/section-leadership/section-leadership.php"
+  },
+  "supports": {
+    "align": true,
+    "anchor": true,
+    "defaultStylePicker": false
+  }
+}

@@ -1,0 +1,25 @@
+.section-value-prop {
+	&.section-value-prop--style-v1{
+		&.org_bg_card_green{
+			background-color: var(--color-lt-accent-2);
+
+			.section-value-prop__title{
+				color: white;
+			}
+
+			.props-card::before {
+				background-color: var(--color-lt-accent-1);
+			}
+			
+			.props-card__full-body{
+				&::before {
+					background: rgb(102 156 66 / 19%);
+				}
+
+				&::after {
+					background: var(--color-lt-accent-1);
+				}
+			}
+		}
+	}
+}	
