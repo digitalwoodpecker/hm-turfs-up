@@ -1,29 +1,29 @@
-.section-our-team{
-    &.section-our-team--style-v1{
-        &.green_bg{
+.section-our-team {
+    &.section-our-team--style-v1 {
+        &.green_bg {
             background-color: var(--color-lt-accent-1);
             
-            .desktop{
+            .desktop {
                 path[stroke] {
-                    stroke: white;
+                    stroke: var(--color-lt-light-1);
                 }
             }
 
-            .section-our-team{
-                &__title{
-                    color:white;
+            .section-our-team {
+                &__title {
+                    color: var(--color-lt-light-1);
                 }
 
-                &__description{
-                    color:white;
+                &__description {
+                    color: var(--color-lt-light-1);
                 }
                 
                 &__slider-pagination {
-                    color:white;
+                    color: var(--color-lt-light-1);
                 }
 
-                &__gallery-thumbs-item::after{
-                    background-color: rgb(102 156 66 / 49%);
+                &__gallery-thumbs-item::after {
+                    background-color: rgba(var(--color-lt-accent-1-RGB), 0.49);
                 }
             }
         }

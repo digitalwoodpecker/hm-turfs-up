@@ -1,16 +1,18 @@
-.section-contact-us{
-	&.section-contact-us--style-v2{
-		background-color: white !important;
-	}
-	
-	&.section-contact-us--style-v1{
-		&.orange_bg{
-			background-color: var(--color-lt-accent-2);
+.theme-light {
+	.section-contact-us {
+		&.section-contact-us--style-v1 {
+			&.orange_bg {
+				background-color: var(--color-lt-accent-2);
 
-			.section__bg::after {
-				background: none !important;
+				.section__bg::after {
+					background: none;
+				}
 			}
+			
 		}
 		
+		&.section-contact-us--style-v2 {
+			background-color: var(--color-lt-light-1);
+		}
 	}
 }

@@ -1,23 +1,21 @@
-.section-intro { 
-	&.section-intro--style-v3 { 
- 		.section-intro { 
- 			&__main { 
- 				max-width: 100% !important; 
- 			} 
- 
- 			&__title { 
- 			max-width: 70% !important; 
- 			}
- 		} 
-	} 
-}
+.theme-light {
+	.section-intro { 
+		&.section-intro--style-v3 {
+			.section-intro { 
+				&__main { 
+					max-width: 100%; 
+				} 
+	
+				&__title { 
+				max-width: 70%; 
+				}
+			} 
 
-@media (max-width: 600px) {
-    .section-intro { 
-        &.section-intro--style-v3 { 
-            .section-intro__title { 
-                font-size: 14px; 
-            } 
-        } 
-    } 
+			@media (max-width: 600px) {
+				.section-intro__title { 
+					font-size: 1.4rem; 
+				} 
+			}
+		} 
+	}
 }

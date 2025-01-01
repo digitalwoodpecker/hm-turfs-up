@@ -1,31 +1,32 @@
-.section-service-intro{
-  &.section-service-intro--style-v1{
-    .section-service-intro__gallery {
-      margin-left: 0;
-    }
-
-    .section-service-intro__bg::before {
-      background-color: rgb(102 156 66 ) !important;
-    }
-  }
-
-.section-service-intro__main{
-    .section-title--style6{
-      &.section-service-intro__subtitle{
-          color:white;
-      }  
-    }
-  }
-}
-
 .theme-light {
-    .section-service-intro__gallery-thumbs {
-      .swiper-slide-thumb-active {
-        .section-service-intro__gallery-thumbs-item {
-          &::after {
-            box-shadow: inset 0 0 0 5px var(--color-lt-accent-2);
-          }
+  .section-service-intro {
+    &.section-service-intro--style-v1 {
+      .section-service-intro__gallery {
+        margin-left: 0;
+      }
+
+      .section-service-intro__bg::before {
+        background-color: var(--color-lt-accent-1);
+      }
+    }
+
+    .section-service-intro__main {
+      .section-title--style6 {
+        &.section-service-intro__subtitle {
+            color: var(--color-lt-light-1);
+            font-weight: normal;
+        }  
+      }
+    }
+  }
+
+  .section-service-intro__gallery-thumbs {
+    .swiper-slide-thumb-active {
+      .section-service-intro__gallery-thumbs-item {
+        &::after {
+          box-shadow: inset 0 0 0 0.5rem var(--color-lt-accent-2);
         }
       }
     }
   }
+}

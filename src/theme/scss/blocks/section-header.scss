@@ -1,23 +1,24 @@
-.page-header{
-    &.page-header--v1{
-            .areas_menu ul.sub-menu.one-level {
-                column-count: 2;
-                column-gap: 0px;
-                list-style: none;
-                padding: 0;
-                width: 45rem;
+.page-header {
+        &.page-header--v1 {
+                .areas_menu {
+                    ul {                
+                        &.sub-menu {
+                            &.one-level {
+                                column-count: 2;
+                                column-gap: 0px;
+                                list-style: none;
+                                padding: 0;
+                                width: 45rem;
+                            }
+                    }
+                }
+            }
+
+            @media (min-width: 1720px) {
+                .page-header__nav {
+                    padding-left: 4rem;
+                    padding-right: 4rem;
+                }
             }
         }
     }
-
-@media (min-width: 1720px) {
-    .page-header{
-        &.page-header--v1{
-            .page-header__nav {
-                padding-left: 4rem;
-                padding-right: 4rem;
-            }
-        }
-    } 
-}
-

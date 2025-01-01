@@ -1,5 +1,5 @@
-.section-related{
-    &.section-related--style-v1{
+.section-related {
+    &.section-related--style-v1 {
         .related-card::before {
             background-color: rgba(var(--color-lt-accent-2-RGB), 0.8);
         }

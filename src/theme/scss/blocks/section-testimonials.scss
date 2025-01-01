@@ -1,11 +1,11 @@
-.section-testimonials{
-	&.section-testimonials--style-v3{
-	  &.green_bg{
+.section-testimonials {
+	&.section-testimonials--style-v3 {
+	  &.green_bg {
 		background-color: var(--color-lt-accent-1);
 
-		.section-testimonials__slider{
+		.section-testimonials__slider {
 			.testimonials-card__logo {
-				color: rgb(102, 156, 66);
+				color: var(--color-lt-accent-1);
 			}
 	    }
 
@@ -13,18 +13,18 @@
 			color: var(--color-lt-accent-2);
 		}
 
-		.section-testimonials__title{
-			color:white;
+		.section-testimonials__title {
+			color:var(--color-lt-light-1);
 		}
 
-		.section-testimonials__rate-info{
-			color:white;
+		.section-testimonials__rate-info {
+			color:var(--color-lt-light-1);
 		}
 
-		.swiper-controls--circle{
+		.swiper-controls--circle {
 			box-shadow: 0 0 2rem var(--color-lt-accent-2);
 
-			.swiper-button-prev{
+			.swiper-button-prev {
 				background-color: var(--color-lt-accent-2);
 			}
 
@@ -32,19 +32,23 @@
 				background-color: var(--color-lt-accent-2);
 			}
 
-			button.swiper-button-prev:hover{
-				background-color: white !important;
+			button.swiper-button-prev:hover {
+					@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
+					background-color: var(--color-lt-light-1) !important;
 
-				svg{
-					color: var(--color-lt-accent-2);
+					svg{
+						color: var(--color-lt-accent-2);
+					}
 				}
 			}
 
-			button.swiper-button-next:hover{
-				background-color: white !important;
+			button.swiper-button-next:hover {
+					@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
+					background-color: var(--color-lt-light-1) !important;
 
-				svg{
-					color: var(--color-lt-accent-2);
+					svg{
+						color: var(--color-lt-accent-2);
+					}
 				}
 			}
 		}
