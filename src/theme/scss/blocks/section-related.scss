@@ -1,7 +1,11 @@
 .section-related {
     &.section-related--style-v1 {
-        .related-card::before {
-            background-color: rgba(var(--color-lt-accent-2-RGB), 0.8);
+        .related-card{
+            &::before {
+                .theme-light & {
+                    background-color: rgba(var(--color-lt-accent-2-RGB), 0.8);
+                }
+            }
         }
     }
 }

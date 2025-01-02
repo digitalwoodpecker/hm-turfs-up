@@ -6,7 +6,7 @@
  * @param array $block The block settings and attributes.
  * @param string $content The block inner HTML (empty).
  * @param bool $is_preview True during AJAX preview.
- * @param   (int|string) $post_id The post ID this block is saved to.
+ * @param (int|string) $post_id The post ID this block is saved to.
  */
 
 $id = $block['id'];
@@ -46,6 +46,9 @@ if ( get_field( 'benefits_section_group' ) ) {
 	$benefits = [];
 }
 
+// Apply margin-bottom condition
+$header_style = empty($section_title) ? 'margin-bottom: 0;' : 'margin-bottom: 5.8rem;';
+
 ?>
 
 <?php if ( isset( $block['data']['block_preview_images'] ) ) : ?>
@@ -64,7 +67,7 @@ if ( get_field( 'benefits_section_group' ) ) {
 		<div class="section__body">
 			<div class="section-benefits__content">
 				<div class="container">
-					<div class="section-benefits__header">
+					<div class="section-benefits__header" style="<?= esc_attr($header_style); ?>">
 						<div class="section-title section-title--style1 section-benefits__title">
 							<h2>
 								<?= esc_html( $section_title ) ?>

@@ -1,89 +1,116 @@
-.theme-light {
-    .page-footer {
+.page-footer {
+    .theme-light & {
         color: var(--color-lt-light-1);
         background-color: var(--color-lt-accent-2);
         border-bottom: 0;
+    }
 
-        .page-footer__info {
-                &.page-footer__info--v1 {
-                    .button-bordered {
+    &__info {
+        &.page-footer__info--v1 {
+                .button-bordered {
+                    .theme-light & {
                         color: var(--color-lt-light-1);
+                    }
 
-                        &::after {
+                    &::after {
+                        .theme-light & {
                             background: var(--color-lt-light-1);
                         }
-            
-                        &::before {
+                    }
+        
+                    &::before {
+                        .theme-light & {
                             border: 0.2rem solid var(--color-lt-light-1);
                         }
+                    }
 
-                        &:hover {
-                            .button__label {
-                                @media not (pointer: coarse), (hover: hover) and (pointer: fine) {
-                                color: var(--color-lt-dark);
+                    &:hover {
+                        .button__label {
+                            @media not (pointer: coarse), (hover: hover) and (pointer: fine) {
+                                .theme-light & {
+                                    color: var(--color-lt-dark);
                                 }
                             }
                         }
                     }
+                }
 
-                    .section-title {
-                        &.section-title--style5 {
-                            &.title {
-                                font-size: 2.4rem;
-                                font-weight: 600;
-                                line-height: 2.88rem;
-                            }
+                .section-title {
+                    &--style5 {
+                        &.title {
+                            font-size: 2.4rem;
+                            font-weight: 600;
+                            line-height: 2.88rem;
                         }
                     }
+                }
 
-                    .menu {
-                        a {
+                .menu {
+                    a {
+                        .theme-light & {
                             color: rgba(var(--color-lt-light-1-RGB), 80%);
                             font-size: 1.6rem;
                             line-height: 2.4rem;
-                            
-                            &:hover {
-                                    @media not (pointer: coarse), (hover: hover) and (pointer: fine) {
-                                    color: var(--color-lt-accent-1);                       
+                        }
+                        
+                        &:hover {
+                            @media not (pointer: coarse), (hover: hover) and (pointer: fine) {
+                                .theme-light & {
+                                    color: var(--color-lt-accent-1);
                                 }
+                     
                             }
                         }
                     }
-
-                    .footer-contact-info {
-                        .address-link {
+                }
+            
+                .footer-contact-info {
+                    .address-link {
+                        .theme-light & {
                             color: var(--color-lt-light-1);
                         }
-            
-                        .phone-number {
+                    }
+        
+                    .phone-number {
+                        .theme-light & {
                             color: var(--color-lt-light-1);
                         }
-            
-                        .social-item {
+                    }
+        
+                    .social-item {
+                        .theme-light & {
                             background-color: rgba(var(--color-lt-light-1-RGB), 10%) !important;
                             color: var(--color-lt-light-1) !important;
                         }
                     }
-            }
-        }
-
-        .page-footer__copyright {
-            .page-footer__copyright-container{
-                .block-left {
-                    .item-sitemap {
-                        color: rgba(var(--color-lt-light-1-RGB), 50%);
-                    }
                 }
-    
-                .block-right {
-                    color: rgba(var(--color-lt-light-1-RGB), 50%);
-    
-                    .item-design {
-                        .text {
+        }
+    }
+
+    &__copyright {
+        &-container {
+            .block-left {
+                    .item-sitemap {
+                        .theme-light & {
                             color: rgba(var(--color-lt-light-1-RGB), 50%);
                         }
-    
-                        .design-link {
+                    }
+                }
+
+            .block-right {
+                .theme-light & {
+                    color: rgba(var(--color-lt-light-1-RGB), 50%);
+                }
+
+                .item-design {
+                    .text {
+                        .theme-light & {
+                            color: rgba(var(--color-lt-light-1-RGB), 50%);
+                        }
+                    }
+
+                    .design-link {
+                        .theme-light & {
                             color: rgba(var(--color-lt-light-1-RGB), 50%);
                         }
                     }

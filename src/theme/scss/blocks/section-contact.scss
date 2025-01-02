@@ -1,18 +1,21 @@
-.theme-light {
-	.section-contact-us {
-		&.section-contact-us--style-v1 {
-			&.orange_bg {
-				background-color: var(--color-lt-accent-2);
-
-				.section__bg::after {
-					background: none;
-				}
-			}
-			
+.section-contact-us {
+	&.section-contact-us--style-v1 {
+		.theme-light & {
+			background-color: var(--color-lt-accent-2);
 		}
-		
-		&.section-contact-us--style-v2 {
-			background-color: var(--color-lt-light-1);
+  
+		.section__bg {
+			&::after {
+					.theme-light & {
+					background: none;
+				}	
+			}
 		}
 	}
-}
+  
+	&.section-contact-us--style-v2 {
+		.theme-light & {
+		background-color: var(--color-lt-light-1);
+		}
+	}
+}  

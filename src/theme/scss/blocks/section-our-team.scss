@@ -1,31 +1,32 @@
 .section-our-team {
     &.section-our-team--style-v1 {
-        &.green_bg {
+        .theme-light & {
             background-color: var(--color-lt-accent-1);
-            
-            .desktop {
-                path[stroke] {
+        }
+        
+        .desktop {
+            path[stroke] {
+                .theme-light & {
                     stroke: var(--color-lt-light-1);
                 }
             }
+        }
 
-            .section-our-team {
-                &__title {
+        .section-our-team {
+            &__title, &__description, &__slider-pagination  {
+                .theme-light & {
                     color: var(--color-lt-light-1);
                 }
+            }
 
-                &__description {
-                    color: var(--color-lt-light-1);
-                }
-                
-                &__slider-pagination {
-                    color: var(--color-lt-light-1);
-                }
-
-                &__gallery-thumbs-item::after {
-                    background-color: rgba(var(--color-lt-accent-1-RGB), 0.49);
+            &__gallery-thumbs-item{
+                &::after {
+                    .theme-light & {
+                        background-color: rgba(var(--color-lt-accent-1-RGB), 0.49);
+                    }
                 }
             }
         }
     }
 }
+

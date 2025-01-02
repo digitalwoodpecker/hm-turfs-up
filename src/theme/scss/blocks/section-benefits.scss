@@ -1,17 +1,17 @@
-.section-benefits { 
-	background-color: var(--color-lt-accent-2); 
-
-	.section-benefits__header {
-		margin-bottom: 0;
+.section-benefits {
+	.theme-light & {
+		background-color: var(--color-lt-accent-2);
 	}
-
-	.service-grid {
-		padding: 0.4rem; 
-		flex: 1 0 16%; 
-		max-width: 100%; 
-	}
-
+	 
 	.service {
-		background-color: var(--color-lt-light-1);
+		.theme-light & {
+			background-color: var(--color-lt-light-1);
+		}
+
+		&-grid {
+			padding: 0.4rem;
+			flex: 1 0 16%; 
+			max-width: 100%; 
+		}
 	}
 }

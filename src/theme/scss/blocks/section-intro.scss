@@ -1,21 +1,22 @@
-.theme-light {
-	.section-intro { 
-		&.section-intro--style-v3 {
-			.section-intro { 
-				&__main { 
+.section-intro { 
+	&--style-v3 {
+		.section-intro { 
+			&__main { 
+				.theme-light & {
 					max-width: 100%; 
-				} 
-	
-				&__title { 
-				max-width: 70%; 
 				}
 			} 
 
-			@media (max-width: 600px) {
-				.section-intro__title { 
-					font-size: 1.4rem; 
-				} 
+			&__title { 
+				.theme-light & {
+					max-width: 70%; 
+
+					@media (max-width: 600px) {
+						font-size: 1.4rem;
+					}
+				}
 			}
 		} 
 	}
-}
+} 
+

@@ -1,21 +1,21 @@
 .page-header {
         &.page-header--v1 {
                 .areas_menu {
-                    ul {                
-                        &.sub-menu {
-                            &.one-level {
-                                column-count: 2;
-                                column-gap: 0px;
-                                list-style: none;
-                                padding: 0;
-                                width: 45rem;
+                    @media (min-width: 1280px) {
+                        ul {                
+                            &.sub-menu {
+                                &.one-level {
+                                    column-count: 2;
+                                    width: 45rem;
+                                }
                             }
+                        }
                     }
-                }
-            }
 
-            @media (min-width: 1720px) {
-                .page-header__nav {
+                }
+
+            .page-header__nav {
+                @media (min-width: 1720px) {
                     padding-left: 4rem;
                     padding-right: 4rem;
                 }
