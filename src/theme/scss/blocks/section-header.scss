@@ -1,24 +1,23 @@
 .page-header {
-        &.page-header--v1 {
-                .areas_menu {
-                    @media (min-width: 1280px) {
-                        ul {                
-                            &.sub-menu {
-                                &.one-level {
-                                    column-count: 2;
-                                    width: 45rem;
-                                }
-                            }
-                        }
-                    }
+	&.page-header--v1 {
+		.areas_menu {
+			ul {                
+				&.sub-menu {
+					&.one-level {
+						@media (min-width: 1280px) {
+							column-count: 2;
+							width: 45rem;
+						}
+					}
+				}
+			}
+		}
 
-                }
-
-            .page-header__nav {
-                @media (min-width: 1720px) {
-                    padding-left: 4rem;
-                    padding-right: 4rem;
-                }
-            }
-        }
-    }
+		.page-header__nav {
+			@media (min-width: 1720px) {
+				padding-left: 4rem;
+				padding-right: 4rem;
+			}
+		}
+	}
+}

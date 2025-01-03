@@ -1,5 +1,6 @@
 .section-resources {
-	&.section-resources--style-v1 {
+	&.section-resources--style-v1,
+	&.section-resources--style-v2  {
 		.resources-card {
 			&::before {
 				.theme-light & {
@@ -8,84 +9,47 @@
 			}
 		}
 	}
-	
-	&.section-resources--style-v2 {
-		.widget {
-			.resources-card {
-				&::before {
-					.theme-light & {
-						background-color: rgba(var(--color-lt-accent-2-RGB), 0.8);
+
+	&.section-resources--style-v2 {		
+		.widget_categories {
+			ul {
+				a {
+					&:hover,
+					&:focus {
+						@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
+							.theme-light & {
+								color: var(--color-lt-accent-2);
+							}
+						}
 					}
 				}
-			}
-			
-			&.widget_categories {
-				ul {
+
+				.current-cat {
 					a {
-						&:hover {
-							@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
-								.theme-light & {
-									color: var(--color-lt-accent-2);
-								}
-
-							}
-						}
-
-						&:focus {
-							.theme-light & {
-								color: var(--color-lt-accent-2);
-							}		
-						}
-					}
-
-					.current-cat {
-						a {
-							.theme-light & {
-								color: var(--color-lt-accent-2);
-							}
+						.theme-light & {
+							color: var(--color-lt-accent-2);
 						}
 					}
 				}
 			}
 		}
-		
+
 		.article-block__footer {
 			.article-link {
-				&.disabled {
-					&.article-link {
-						&--next, &--back  {
-							.article-link {
-								&__text, &__icon {
-									.theme-light & {
-										color: rgba(var(--color-dt-accent-1-RGB), 0.4);
-									}
-								}
-							}
+				.theme-light & {
+					color: var(--color-lt-accent-2);
+
+					&:hover,
+					&:focus{
+						@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
+							color: var(--color-lt-accent-1);
 						}
 					}
 				}
 
-				&__text, &__icon {
+				&.disabled{
 					.theme-light & {
-						color: var(--color-lt-accent-2);
-					}
-				}
-
-				&:hover {
-					.article-link{
-						&__text {
-							@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
-								.theme-light & {
-									color: var(--color-lt-accent-1);
-								}
-							}
-						}
-
-						&__icon {
-							.theme-light & {
-								color: var(--color-lt-accent-1);
-							}
-						}
+						color: rgba(var(--color-lt-accent-2-RGB), 0.4);
 					}
 				}
 			}

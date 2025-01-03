@@ -1,51 +1,51 @@
 .section-testimonials {
 	&.section-testimonials--style-v3 {
-		&.green_bg {
-			.theme-light & {
-				background-color: var(--color-lt-accent-1);
+		.theme-light & {
+			background-color: var(--color-lt-accent-1);
+		}
+
+		.section-testimonials {
+			&__title,
+			&__rate-info {
+				.theme-light & {
+					color: var(--color-lt-light-1);
+				}
 			}
 
-			.section-testimonials {
-				&__title, &__rate-info {
+			&__slider {
+				.testimonials-card__logo {
 					.theme-light & {
-						color: var(--color-lt-light-1);
-					}
-				}
-
-				&__slider {
-					.testimonials-card__logo {
-						.theme-light & {
-							color: var(--color-lt-accent-1);
-						}
+						color: var(--color-lt-accent-1);
 					}
 				}
 			}
+		}
 
-			.star-rating__icon {
-				.theme-light & {
-					color: var(--color-lt-accent-2);
-				}
+		.star-rating__icon {
+			.theme-light & {
+				color: var(--color-lt-accent-2);
+			}
+		}
+
+		.swiper-controls--circle {
+			.theme-light & {
+				box-shadow: 0 0 2rem var(--color-lt-accent-2);
 			}
 
-			.swiper-controls--circle {
-				.theme-light & {
-					box-shadow: 0 0 2rem var(--color-lt-accent-2);
-				}
+			.swiper-button {
+				&-prev,
+				&-next {
+					.theme-light & {
+						background-color: var(--color-lt-accent-2);
+					}
 
-				.swiper-button {
-					&-prev, &-next {
-						.theme-light & {
-							background-color: var(--color-lt-accent-2);
-						}
-
-						&:hover {
-							@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
-								.theme-light & {
-									background-color: var(--color-lt-light-1) !important;
-			
-									svg {
-										color: var(--color-lt-accent-2);
-									}
+					&:hover {
+						@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
+							.theme-light & {
+								background-color: var(--color-lt-light-1) !important;
+		
+								svg {
+									color: var(--color-lt-accent-2);
 								}
 							}
 						}
