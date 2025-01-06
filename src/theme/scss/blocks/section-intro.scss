@@ -1,19 +1,15 @@
 .section-intro { 
-	&--style-v3 {
+	&.section-intro--style-v3 {
 		.section-intro { 
-			&__main { 
-				.theme-light & {
-					max-width: 100%; 
-				}
-			} 
+			&__main {
+				max-width: 100%; 
+			}
 
-			&__title { 
-				.theme-light & {
-					max-width: 70%; 
+			&__title {
+				max-width: 70%; 
 
-					@media (max-width: 600px) {
-						font-size: 1.4rem;
-					}
+				@media (max-width: 600px) {
+					font-size: 1.4rem;
 				}
 			}
 		} 

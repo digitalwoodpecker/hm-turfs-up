@@ -21,7 +21,7 @@
 				&::before,
 				&::after {
 					.theme-light & {
-						background: rgba(var(--color-lt-accent-1-RGB), 19%);
+						background: rgba(var(--color-lt-accent-1-RGB), 0.19);
 					}
 				}
 			}

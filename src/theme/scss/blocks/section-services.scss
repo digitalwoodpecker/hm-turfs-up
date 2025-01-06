@@ -1,17 +1,17 @@
 .section-services {
 	&.section-services--style-v4 {
 		.section {
-			&__bg {
+			&-services__bg {
 				&::before {
 					.theme-light & {
 						background-color: var(--color-lt-accent-1);
-						mask-image: linear-gradient(180deg, var(--color-lt-light-1) 0%, rgba(var(--color-lt-light-1-RGB), 0%));
+						mask-image: linear-gradient(180deg, var(--color-lt-light-1) 0%, rgba(var(--color-lt-light-1-RGB), 0));
 					}
 				}
 			}
 
 			&__body {
-				.section-services__thumbs{
+				.section-services__thumbs {
 					&-nav {
 						.theme-light & {
 							background: var(--color-lt-accent-1);

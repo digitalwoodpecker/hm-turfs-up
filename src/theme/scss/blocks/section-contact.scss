@@ -4,9 +4,9 @@
 			background-color: var(--color-lt-accent-2);
 		}
   
-		.section__bg {
+		.section-contact-us__bg {
 			&::after {
-					.theme-light & {
+				.theme-light & {
 					background: none;
 				}	
 			}
@@ -15,7 +15,7 @@
   
 	&.section-contact-us--style-v2 {
 		.theme-light & {
-		background-color: var(--color-lt-light-1);
+			background-color: var(--color-lt-light-1);
 		}
 	}
 }

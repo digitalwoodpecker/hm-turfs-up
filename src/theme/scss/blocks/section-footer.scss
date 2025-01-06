@@ -24,23 +24,12 @@
 					}
 				}
 
-				&:hover {
-					.button__label {
-						@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
-							.theme-light & {
-								color: var(--color-lt-dark);
-							}
+				&:hover,
+				&:focus {
+					@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
+						.theme-light & {
+							color: var(--color-lt-dark);
 						}
-					}
-				}
-			}
-
-			.section-title {
-				&--style5 {
-					&.title {
-						font-size: 2.4rem;
-						font-weight: 600;
-						line-height: 2.88rem;
 					}
 				}
 			}
@@ -74,7 +63,7 @@
 	
 				.social-item {
 					.theme-light & {
-						background-color: rgba(var(--color-lt-light-1-RGB), 10%) !important;
+						background-color: rgba(var(--color-lt-light-1-RGB), 0.1) !important;
 					}
 				}
 			}
@@ -86,21 +75,21 @@
 			.block-left {
 					.item-sitemap {
 						.theme-light & {
-							color: rgba(var(--color-lt-light-1-RGB), 50%);
+							color: rgba(var(--color-lt-light-1-RGB), 0.5);
 						}
 					}
 				}
 
 			.block-right {
 				.theme-light & {
-					color: rgba(var(--color-lt-light-1-RGB), 50%);
+					color: rgba(var(--color-lt-light-1-RGB), 0.5);
 				}
 
 				.item-design {
 					.text,
 					.design-link {
 						.theme-light & {
-							color: rgba(var(--color-lt-light-1-RGB), 50%);
+							color: rgba(var(--color-lt-light-1-RGB), 0.5);
 						}
 					}
 				}

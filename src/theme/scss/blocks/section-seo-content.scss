@@ -28,12 +28,12 @@
 					}
 				}
 			}
-	
-			.button {
+
+			&__button {
 				.theme-light & {
 					color: var(--color-lt-accent-1);
 					background: var(--color-lt-accent-2);
-					box-shadow: 0 0 5rem rgba(var(--color-lt-accent-2-RGB), 70%);
+					box-shadow: 0 0 5rem rgba(var(--color-lt-accent-2-RGB), 0.7);
 				}
 
 				&:hover,
@@ -74,23 +74,23 @@
 						}
 					}
 				}
-			}
 
-			.button {
-				.theme-light & {
-					background: var(--color-lt-accent-1);
-					box-shadow: 0 0 5rem rgba(var(--color-lt-accent-1-RGB), 70%);
-					width: 20.5rem;
-				}
-
-				&:hover,
-				&:focus {
-					@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
-						.theme-light & {
-							background-color: var(--color-lt-light-1);
-							color: var(--color-lt-accent-1);
-							box-shadow: 0 0 0.5rem rgba(var(--color-lt-light-1), 70%);
-							width: 20.5rem;
+				&__button {
+					.theme-light & {
+						background: var(--color-lt-accent-1);
+						box-shadow: 0 0 5rem rgba(var(--color-lt-accent-1-RGB), 0.7);
+						width: 20.5rem;
+					}
+	
+					&:hover,
+					&:focus {
+						@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
+							.theme-light & {
+								background-color: var(--color-lt-light-1);
+								color: var(--color-lt-accent-1);
+								box-shadow: 0 0 0.5rem rgba(var(--color-lt-light-1), 0.7);
+								width: 20.5rem;
+							}
 						}
 					}
 				}
@@ -137,19 +137,19 @@
 						color: var(--color-lt-light-1);
 					}
 				}
-			}
 
-			.button {
-				.theme-light & {
-					background: var(--color-lt-accent-2);
-					box-shadow: 0 0 5rem rgba(var(--color-lt-accent-2-RGB), 70%);
-
-					&:hover,
-					&:focus {
-						@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
-							background: var(--color-lt-light-1);
-							color: var(--color-lt-accent-2);
-							box-shadow: 0 0 0.5rem rgba(var(--color-lt-light-1), 70%);
+				&__button {
+					.theme-light & {
+						background: var(--color-lt-accent-2);
+						box-shadow: 0 0 5rem rgba(var(--color-lt-accent-2-RGB), 0.7);
+	
+						&:hover,
+						&:focus {
+							@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
+								background: var(--color-lt-light-1);
+								color: var(--color-lt-accent-2);
+								box-shadow: 0 0 0.5rem rgba(var(--color-lt-light-1), 0.7);
+							}
 						}
 					}
 				}
