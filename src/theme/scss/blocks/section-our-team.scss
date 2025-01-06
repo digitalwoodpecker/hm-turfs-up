@@ -5,9 +5,11 @@
 		}
 		
 		.swiper-button{
-			path[stroke] {
-				.theme-light & {
-					stroke: var(--color-lt-light-1);
+			svg{
+				path[stroke] {
+					.theme-light & {
+						stroke: var(--color-lt-light-1);
+					}
 				}
 			}
 		}

@@ -16,9 +16,7 @@
 				}
 
 				&__title {
-					.theme-light & {
-						font-size: 8rem;
-					}
+					font-size: 8rem;
 				}
 
 				&__title,
@@ -108,9 +106,10 @@
 			.seo-content__text-content {
 				&::before,
 				&::after {
+					height: 100%;
+					
 					.theme-light & {
 						background-color: var(--color-lt-accent-2);
-						height: 100%;
 					}
 				}
 			}
@@ -142,9 +141,11 @@
 					.theme-light & {
 						background: var(--color-lt-accent-2);
 						box-shadow: 0 0 5rem rgba(var(--color-lt-accent-2-RGB), 0.7);
-	
-						&:hover,
-						&:focus {
+					}
+
+					&:hover,
+					&:focus {
+						.theme-light & {
 							@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
 								background: var(--color-lt-light-1);
 								color: var(--color-lt-accent-2);

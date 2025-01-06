@@ -1,8 +1,9 @@
 .page-footer {
+	border-bottom: 0;
+	
 	.theme-light & {
 		color: var(--color-lt-light-1);
 		background-color: var(--color-lt-accent-2);
-		border-bottom: 0;
 	}
 
 	&__info {
@@ -36,13 +37,15 @@
 
 			.menu {
 				a {
+					font-size: 1.6rem;
+					line-height: 2.4rem;
+
 					.theme-light & {
 						color: rgba(var(--color-lt-light-1-RGB), 80%);
-						font-size: 1.6rem;
-						line-height: 2.4rem;
 					}
 					
-					&:hover {
+					&:hover,
+					&:focus {
 						@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
 							.theme-light & {
 								color: var(--color-lt-accent-1);

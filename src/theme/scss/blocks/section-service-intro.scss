@@ -28,9 +28,10 @@
 			&__main {
 				.section-title--style6 {
 					&.section-service-intro__subtitle {
+						font-weight: normal;
+						
 						.theme-light & {
 							color: var(--color-lt-light-1);
-							font-weight: normal;
 						}
 					}  
 				}

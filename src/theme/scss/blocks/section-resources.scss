@@ -38,9 +38,11 @@
 			.article-link {
 				.theme-light & {
 					color: var(--color-lt-accent-2);
+				}
 
-					&:hover,
-					&:focus{
+				&:hover,
+				&:focus{
+					.theme-light & {
 						@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
 							color: var(--color-lt-accent-1);
 						}
