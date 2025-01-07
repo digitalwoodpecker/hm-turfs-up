@@ -45,10 +45,6 @@ if ( get_field( 'benefits_section_group' ) ) {
 } else {
 	$benefits = [];
 }
-
-// Apply margin-bottom condition
-$header_style = empty($section_title) ? 'margin-bottom: 0;' : 'margin-bottom: 5.8rem;';
-
 ?>
 
 <?php if ( isset( $block['data']['block_preview_images'] ) ) : ?>
@@ -67,13 +63,15 @@ $header_style = empty($section_title) ? 'margin-bottom: 0;' : 'margin-bottom: 5.
 		<div class="section__body">
 			<div class="section-benefits__content">
 				<div class="container">
-					<div class="section-benefits__header" style="<?= esc_attr($header_style); ?>">
+				<?php if ( $section_title ) : ?>
+					<div class="section-benefits__header">
 						<div class="section-title section-title--style1 section-benefits__title">
 							<h2>
 								<?= esc_html( $section_title ) ?>
 							</h2>
 						</div>
 					</div>
+				<?php endif ?>
 
 					<div class="section-benefits__main">
 						<div class="row service-align js-horizontal-scroll">

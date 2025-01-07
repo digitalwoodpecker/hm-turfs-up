@@ -25,9 +25,9 @@
 					}
 				}
 
-				&:hover,
-				&:focus {
-					@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
+				@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
+					&:hover,
+					&:focus {
 						.theme-light & {
 							color: var(--color-lt-dark);
 						}
@@ -41,12 +41,12 @@
 					line-height: 2.4rem;
 
 					.theme-light & {
-						color: rgba(var(--color-lt-light-1-RGB), 80%);
+						color: rgba(var(--color-lt-light-1-RGB), 0.8);
 					}
 					
-					&:hover,
-					&:focus {
-						@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
+					@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
+						&:hover,
+						&:focus {
 							.theme-light & {
 								color: var(--color-lt-accent-1);
 							}

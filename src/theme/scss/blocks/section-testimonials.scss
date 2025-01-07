@@ -39,12 +39,12 @@
 						background-color: var(--color-lt-accent-2);
 					}
 
-					&:hover,
-					&:focus {
-						@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
+					@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
+						&:hover,
+						&:focus {
 							.theme-light & {
 								background-color: var(--color-lt-light-1) !important;
-		
+
 								svg {
 									color: var(--color-lt-accent-2);
 								}

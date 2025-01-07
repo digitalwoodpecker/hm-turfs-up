@@ -34,9 +34,9 @@
 					box-shadow: 0 0 5rem rgba(var(--color-lt-accent-2-RGB), 0.7);
 				}
 
-				&:hover,
-				&:focus {
-					@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
+				@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
+					&:hover,
+					&:focus {
 						.theme-light & {
 							background-color: var(--color-lt-accent-1);
 							border: 0.1rem solid var(--color-lt-light-1);
@@ -74,20 +74,22 @@
 				}
 
 				&__button {
+					width: 20.5rem;
+					
 					.theme-light & {
 						background: var(--color-lt-accent-1);
 						box-shadow: 0 0 5rem rgba(var(--color-lt-accent-1-RGB), 0.7);
-						width: 20.5rem;
 					}
-	
-					&:hover,
-					&:focus {
-						@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
+
+					@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
+						&:hover,
+						&:focus {
+							width: 20.5rem;
+
 							.theme-light & {
 								background-color: var(--color-lt-light-1);
 								color: var(--color-lt-accent-1);
 								box-shadow: 0 0 0.5rem rgba(var(--color-lt-light-1), 0.7);
-								width: 20.5rem;
 							}
 						}
 					}
@@ -143,10 +145,10 @@
 						box-shadow: 0 0 5rem rgba(var(--color-lt-accent-2-RGB), 0.7);
 					}
 
-					&:hover,
-					&:focus {
-						.theme-light & {
-							@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
+					@media not (pointer: coarse), (hover: hover) and (pointer: fine) {
+						&:hover,
+						&:focus {
+							.theme-light & {
 								background: var(--color-lt-light-1);
 								color: var(--color-lt-accent-2);
 								box-shadow: 0 0 0.5rem rgba(var(--color-lt-light-1), 0.7);
